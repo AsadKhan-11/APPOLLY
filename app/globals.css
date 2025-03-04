@@ -1,7 +1,42 @@
 @import "tailwindcss";
 
+:root {
+  --royal-color: #5956e9;
+  --grey-color: #232233;
+  --silver-color: #6c6c72;
+}
+
 body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+.h8 {
+  font-size: 12.8px;
+}
+
+.h7 {
+  font-size: 16px;
+}
+
+h6 {
+  font-size: 20px;
+}
+
+h5 {
+  font-size: 25px;
+}
+
+h4 {
+  font-size: 31.25px;
+}
+h3 {
+  font-size: 39.06px;
+}
+h2 {
+  font-size: 48.83px;
+}
+h1 {
+  font-size: 61.04px;
 }
