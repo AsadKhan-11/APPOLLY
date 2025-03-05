@@ -26,7 +26,7 @@ export default function Home() {
           sint. Velit officia consequat duis enim velit mollit. Exercitation
           veniam consequat sunt nostrud amet.
         </h6>
-        <h5 className="w-auto text-left align-text-top z-20 left-[30px] absolute top-[353px] font-semibold ">
+        <h5 className="w-auto text-left align-text-top z-20 left-[30px] absolute top-[353px] font-semibold text-[var(--grey-color)]">
           DOWNLOAD APP NOW
         </h5>
         <div className="w-[314px] h-[47px] flex gap-3.5 z-20 left-[30px] absolute top-[396px]">
@@ -41,8 +41,8 @@ export default function Home() {
           <Image
             src="App.svg"
             alt="App-Image"
-            width={149}
-            height={47}
+            width={151}
+            height={45}
             className=" "
             priority
           />
@@ -57,7 +57,7 @@ export default function Home() {
         alt="Phone-Image"
         width={646}
         height={725}
-        className="absolute w-[646px] h-[725px] left-[859px] top-[216px] object-fill "
+        className="absolute w-[646px] h-[725px] left-[836px] top-[216px] object-fill "
         priority
       />
     </section>
