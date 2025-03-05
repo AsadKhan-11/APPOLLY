@@ -1,15 +1,15 @@
 import Image from "next/image";
-import Navbar from "@/components/Navbar/Navbar";
+import Navbar from "@/components/Navbar";
 
 export default function Home() {
   return (
-    <section className="relative w-[1440px] h-[1024px] mx-auto  ">
+    <section className="relative w-[1440px] h-[1024px] overflow-hidden mx-auto  ">
       {/* Background Image */}
       <Image
         src="/Background-Image.svg"
         alt="Background"
         fill
-        className="absolute top-0 left-0 -z-10 w-[1440px] h-[1024px] object-cover"
+        className="absolute top-0 left-0 -z-10 w-[1440px] h-[1024px] object-fill"
         priority
       />
 
@@ -57,7 +57,7 @@ export default function Home() {
         alt="Phone-Image"
         width={646}
         height={725}
-        className="absolute w-[646px] h-[725px] left-[879px] top-[216px] "
+        className="absolute w-[646px] h-[725px] left-[859px] top-[216px] object-fill "
         priority
       />
     </section>

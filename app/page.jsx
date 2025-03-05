@@ -1,10 +1,13 @@
-import Hero from "@/components/HeroSection/Hero";
+import Hero from "@/sections/Hero";
+import About from "@/sections/About";
 
 export default function Home() {
   return (
-    <div className="w-[1440px] mx-auto flex flex-col items-center ">
+    <div className="w-[1440px] overflow-hidden mx-auto">
       {/* Hero Section  */}
       <Hero />
+      {/* About Section */}
+      <About />
     </div>
   );
 }

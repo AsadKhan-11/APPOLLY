@@ -77,11 +77,14 @@ export default function Navbar() {
         </h6>
         <div className="flex items-center justify-center z-20 rounded-[5px] w-[158px] h-[50px] absolute right-[5px]">
           <h6
-            className=" w-auto z-30 text-white flex items-center justify-center leading-[30px]
-          
+            className=" w-auto z-30 text-white  
+          align-top text-left 
           "
           >
-            <Link href="/" className="font-semibold flex align-top text-left">
+            <Link
+              href="/"
+              className="w-auto flex align-top text-left leading-[30px] font-normal font-feature-settings-[\'liga\']"
+            >
               DOWNLOAD
             </Link>
           </h6>
