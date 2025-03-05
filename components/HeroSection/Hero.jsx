@@ -1,7 +1,10 @@
 import Image from "next/image";
+import Navbar from "@/components/Navbar/Navbar";
+
 export default function Home() {
   return (
-    <section className="relative w-[1525px] h-[1024px]  ">
+    <section className="relative w-[1440px] h-[1024px] mx-auto  ">
+      {/* Background Image */}
       <Image
         src="/Background-Image.svg"
         alt="Background"
@@ -9,6 +12,11 @@ export default function Home() {
         className="absolute top-0 left-0 -z-10 w-[1440px] h-[1024px] object-cover"
         priority
       />
+
+      {/* Navbar*/}
+      <Navbar />
+
+      {/* Hero Section Typography */}
       <div className="absolute w-[620px] h-[535px] left-[135px] top-[321px] bg-transparent flex flex-col justify-center ">
         <h2 className="w-auto  font-bold text-left align-text-top z-20 left-[30px] leading-[130%] absolute top-[91px] right-[73px] text-[var(--royal-color)]">
           A GREAT APP MAKES YOUR LIFE BETTER
@@ -43,6 +51,7 @@ export default function Home() {
         <div className="w-[570px] h-[535px] absolute right-[0px] border-[18px] text-[var(--stroke-color)]"></div>
       </div>
 
+      {/* Hero Section Phone Image */}
       <Image
         src="Phone-Image.svg"
         alt="Phone-Image"
