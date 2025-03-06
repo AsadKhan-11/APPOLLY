@@ -4,8 +4,8 @@ import Navbar from "@/components/Navbar";
 export default function Home() {
   return (
     <section
-      className="relative w-[1440px] h-[1024px] overflow-hidden   
-    max-md:w-[864px]"
+      className="relative w-[1440px] h-[1024px] overflow-hidden  mx-auto 
+    max-md:w-[768px]"
     >
       {/* Background Image */}
       <Image
@@ -24,12 +24,12 @@ export default function Home() {
         className="absolute w-[620px] h-[535px] left-[135px] top-[321px] bg-transparent flex flex-col justify-center
       max-md:w-[391px] max-md:h-[381px] max-md:top-[414px] max-md:left-[40px] "
       >
-        <h4
+        <h2
           className=" w-auto font-bold text-left align-text-top z-20 left-[30px] leading-[130%] absolute top-[91px] right-[73px] text-[var(--royal-color)]
         max-md:left-[18px] max-md:top-[47px] max-md:leading-[47.3px]"
         >
           A GREAT APP MAKES YOUR LIFE BETTER
-        </h4>
+        </h2>
         <h6
           className="h7 w-[487px] h-[66px] text-left align-text-top z-20 left-[30px] absolute top-[235px] leading-6 text-[var(--silver-color)]
         max-md:left-[18px] max-md:top-[148px]"
@@ -82,7 +82,7 @@ export default function Home() {
         width={646}
         height={725}
         className="absolute w-[646px] h-[725px] left-[836px] top-[216px] object-fill
-        max-md:w-[378px] max-md:h-[423px] max-md:left-[443px] max-md:top-[380px]"
+        max-md:w-[378px] max-md:h-[423px] max-md:left-[478px] max-md:top-[380px]"
         priority
       />
     </section>
