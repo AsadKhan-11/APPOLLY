@@ -29,13 +29,13 @@ export default function Home() {
         <h5 className="w-auto text-left align-text-top z-20 left-[30px] absolute top-[353px] font-semibold text-[var(--grey-color)]">
           DOWNLOAD APP NOW
         </h5>
-        <div className="w-[314px] h-[47px] flex gap-3.5 z-20 left-[30px] absolute top-[396px]">
+        <div className="w-[314px] h-[47px] flex gap-3.5 z-20 absolute left-[30px]  top-[396px]">
           <Image
             src="Google.svg"
             alt="Google-Image"
             width={149}
             height={47}
-            className=" "
+            className="w-[149px] h-[47px] "
             priority
           />
           <Image
@@ -43,7 +43,7 @@ export default function Home() {
             alt="App-Image"
             width={151}
             height={45}
-            className=" "
+            className="w-[151px] h-[45px] "
             priority
           />
         </div>

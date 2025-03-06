@@ -64,7 +64,7 @@ export default function Navbar() {
             alt="Appolly Logo"
             height={28}
             width={167}
-            className="z-30 h-[28px] w-[167px] "
+            className="absolute left-[16px] top-[31px] z-30 h-[28px] w-[167px] "
             priority
           />
         </div>
@@ -87,7 +87,7 @@ export default function Navbar() {
           >
             <Link
               href="/"
-              className="w-auto flex align-top text-left leading-[30px] font-normal"
+              className=" absolute right-[16px] top-[12px]  w-auto flex align-top text-left leading-[30px] font-normal"
             >
               DOWNLOAD
             </Link>

@@ -18,12 +18,16 @@ export default function About() {
         height={526}
         width={385}
         priority
-        className="h-[526px] w-[385px] absolute top-[196px]"
+        className="z-30 h-[526px] w-[385px] absolute top-[196px]"
       />
-      <div
-        className="absolute left-[74px] top-[673px] w-[212px] h-[71px]
-       bg-white shadow-[0px_4px_4px_0px_rgba(0,0,0,0.25)"
-      ></div>
+      <Image
+        src="Ellipse.svg"
+        alt="Ellipse "
+        height={71}
+        width={212}
+        priority
+        className="z-10 absolute left-[74px] top-[678px] w-[212px] h-[71px] rounded-full"
+      />
       <FeatureBox
         top={196}
         title="CREATIVE DESIGN"
