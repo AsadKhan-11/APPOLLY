@@ -14,32 +14,35 @@ body {
   padding: 0;
   box-sizing: border-box;
 }
-
+/* globals.css */
 .h8 {
-  font-size: 12.8px;
+  @apply text-[12.8px];
 }
 
 .h7 {
-  font-size: 16px;
+  @apply text-[16px];
 }
 
-h6 {
-  font-size: 20px;
+.h6 {
+  @apply text-[20px];
 }
 
-h5 {
-  font-size: 25px;
+.h5 {
+  @apply text-[25px];
 }
 
-h4 {
-  font-size: 31.25px;
+.h4 {
+  @apply text-[31.25px];
 }
-h3 {
-  font-size: 39.06px;
+
+.h3 {
+  @apply text-[39.06px];
 }
-h2 {
-  font-size: 48.83px;
+
+.h2 {
+  @apply text-[48.83px];
 }
-h1 {
-  font-size: 61.04px;
+
+.h1 {
+  @apply text-[61.04px];
 }

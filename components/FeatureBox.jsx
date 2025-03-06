@@ -4,7 +4,8 @@ export default function FeatureBox({ title, description, top }) {
     <div
       className={`w-[570px] h-[160px] absolute left-[574px] bg-white 
         max-md:w-[391px] max-md:h-[110px] max-md:left-[298px]
-         top-[${top.default}px] md:top-[${top.md}px]`}
+         top-[${top.default}px] md:top-[${top.md}px]
+         max-sm:w-[343px] max-sm:left-[0px]  `}
       style={{
         top: `${top.default}px`,
       }}
@@ -16,12 +17,14 @@ export default function FeatureBox({ title, description, top }) {
         width={24}
         priority
         className="h-[24px] w-[24px] absolute left-[18px] top-[30px]
-        max-md:top-[18px] "
+        max-md:top-[18px] 
+        max-sm:left-[19px] max-sm:top-[18px]"
       />
 
       <h6
         className="w-auto align-top text-left text-[var(--grey-color)] font-semibold absolute left-[59px] top-[30px] leading-[30px]
-      max-md:left-[61px] max-md:top-[18px] "
+      max-md:left-[61px] max-md:top-[18px] 
+      "
       >
         {title}
       </h6>
@@ -29,13 +32,16 @@ export default function FeatureBox({ title, description, top }) {
         className="h7 text-left align-top w-[491px] h-[67px] text-[var(--silver-color)] font-normal
     absolute left-[59px] bottom-[21px] 
     max-md:left-[61px] max-md:bottom-[10px] max-md:w-[300px] max-md:h-[49px]
+    max-md:w-[266px]
+    
     "
       >
         {description}
       </h6>
       <div
         className="w-[570px] h-[160px] shadow-[0px_4px_4px_0px_rgba(0,0,0,0.25)] absolute rounded-[10px]
-      max-md:w-[391px] max-md:h-[110px]"
+      max-md:w-[391px] max-md:h-[110px]
+      max-md:w-[343px]"
       ></div>
     </div>
   );

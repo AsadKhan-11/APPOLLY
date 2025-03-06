@@ -6,7 +6,7 @@ export default function Home() {
     <div
       className="w-[1440px] overflow-x-hidden mx-auto
     max-md:w-[768px]
-        max-sm:w-[375px]"
+    max-sm:w-[375px]"
     >
       {/* Hero Section  */}
       <Hero />
