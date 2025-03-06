@@ -4,7 +4,10 @@ export default function FeatureBox({ title, description, top }) {
     <div
       className={`w-[570px] h-[160px] absolute left-[574px] bg-white 
         max-md:w-[391px] max-md:h-[110px] max-md:left-[298px]
-         top-[${top.default}px] md:top-[${top.md}px] `}
+         top-[${top.default}px] md:top-[${top.md}px]`}
+      style={{
+        top: `${top.default}px`,
+      }}
     >
       <Image
         src="/icons/Checkbox.svg"

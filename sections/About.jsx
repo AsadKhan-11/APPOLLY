@@ -47,13 +47,13 @@ export default function About() {
          "
       />
       <FeatureBox
-        top={{ default: 396, md: 326 }}
+        top={{ default: 396, md: 226 }}
         title="EASY TO USE"
         description="Lorem ipsum dolor sit amet, consectetur adipiscing elit.
          "
       />
       <FeatureBox
-        top={{ default: 596, md: 456 }}
+        top={{ default: 596, md: 240 }}
         title="BEST USER EXPERIENCE"
         description="Lorem ipsum dolor sit amet, consectetur adipiscing elit.
          "
