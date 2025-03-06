@@ -9,7 +9,7 @@ const josefin = Josefin_Sans({
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className="overflow-x-hidden">
+      <body className="">
         <main className={josefin.className}>{children}</main>
       </body>
     </html>
