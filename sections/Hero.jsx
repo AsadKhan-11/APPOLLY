@@ -1,21 +1,20 @@
 import Image from "next/image";
 import Navbar from "@/components/Navbar";
 
-export default function Home() {
+export default function Hero() {
   return (
     <section
-      className="relative w-[1440px] h-[1024px] overflow-hidden  mx-auto 
-    max-md:w-[768px]
-    max-sm:w-[375px]     max-sm:h-[1227px]
-
-    "
+      className="relative max-w-full h-[1024px] overflow-hidden mx-auto flex justify-center
+    lg:max-w-full lg:h-[1024px] 
+    md:max-w-[100%] md:h-[1024px]
+    sm:max-w-[100%] sm:h-[1227px]"
     >
       {/* Background Image */}
       <Image
         src="/Background-Image.svg"
         alt="Background"
         fill
-        className=" z-0  object-cover"
+        className="z-0 absolute object-cover"
         priority
       />
 
@@ -24,44 +23,51 @@ export default function Home() {
 
       {/* Hero Section Typography */}
       <div
-        className="absolute w-[620px] h-[535px] left-[135px] top-[321px] bg-transparent flex flex-col justify-center
-      max-md:w-[391px] max-md:h-[381px] max-md:top-[414px] max-md:left-[40px]
-       max-sm:w-[343px] max-sm:h-[358px] max-sm:top-[188px] max-sm:left-[16px]"
+        className="absolute bg-transparent flex flex-col justify-center
+        lg:w-[620px] lg:h-[535px] lg:top-[321px] lg:left-[9.37%]
+        md:w-[391px] md:h-[381px] md:top-[414px] md:left-[5.20%]
+        sm:w-[343px] sm:h-[358px] sm:top-[188px] sm:left-[4.2%]"
       >
-        <h1
-          className="h2 w-auto font-bold text-left align-text-top z-20 left-[30px] leading-[130%] absolute top-[91px] right-[73px] text-[var(--royal-color)]
-        max-md:left-[18px] max-md:top-[47px] max-md:leading-[47.3px] max-md:.h4
-        max-sm:w-[262px] max-sm:h-[71px] max-sm:left-[2px] max-sm:top-[50px] max-sm:.h5  "
+        <h2
+          className="  text-left align-text-top z-20 left-[30px] absolute  text-[var(--royal-color)]
+          
+
+          lg:w-auto lg:left-[2.08%] lg:top-[91px] lg:leading-[130%] lg:text-dynamic-h2 lg:font-bold
+          md:w-auto  md:left-[2.3%] md:top-[47px] md:leading-[47.3px] md:text-dynamic-h4 md:font-bold
+          sm:w-[262px] sm:h-[71px] sm:left-[2.3%] sm:top-[50px] sm:leading-[37.5px] sm:text-dynamic-h5 sm:font-semibold"
         >
           A GREAT APP MAKES YOUR LIFE BETTER
-        </h1>
+        </h2>
+
         <h1
-          className="h7 w-[487px] h-[66px] text-left align-text-top z-20 left-[30px] absolute top-[235px] leading-6 text-[var(--silver-color)]
-        max-md:left-[18px] max-md:top-[148px]
-        max-sm:w-[293px] max-sm:h-[66px] max-sm:left-[2px] max-sm:top-[139px] "
+          className="h7  text-left align-text-top z-20 left-[30px] absolute top-[235px] leading-6 text-[var(--silver-color)]
+          lg:left-[2.08%] lg:top-[235px] lg:w-[487px] lg:h-[66px] lg:text-dynamic-h7
+          md:left-[1.8%] md:top-[148px]  md:w-[330px] md:h-[66px] md:text-dynamic-h7
+          sm:h-[66px] sm:left-[2.3%] sm:top-[139px] sm:w-[293px] sm:text-dynamic-h7"
         >
           Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
-          sint. Velit officia consequat duis enim velit mollit. Exercitation
-          veniam consequat sunt nostrud amet.
+          sint. Velit officia consequat duis enim velit mollit.
         </h1>
         <h1
-          className="h5 w-auto text-left align-text-top z-20 left-[30px] absolute top-[353px] font-semibold text-[var(--grey-color)]
-        max-md:left-[18px] max-md:top-[237px] 
-        max-sm:left-[2px] max-sm:top-[235px]"
+          className="h5 w-auto text-left align-text-top z-20  absolute  font-semibold text-[var(--grey-color)]
+          lg:left-[2.08%] lg:top-[353px] lg:w-[314px] lg:h-[47px] lg:text-dynamic-h5
+          md:left-[1.8%] md:top-[237px] md:text-[var(--font-size-h6)] md:w-[314px] md:h-[47px] md:text-dynamic-h6  
+          sm:left-[2.3%] sm:top-[235px] sm:text-[var(--font-size-h6)] md:w-[228px] md:h-[34.13px] sm:text-dynamic-h6"
         >
           DOWNLOAD APP NOW
         </h1>
         <div
-          className="w-[314px] h-[47px] flex gap-3.5 z-20 absolute left-[30px]  top-[396px] 
-        max-md:left-[18px] max-md:top-[290px] 
-        max-sm:w-[228px] max-sm:h-[34.13px] max-sm:left-[2px] max-sm:top-[283.44px] "
+          className="w-[314px] h-[47px] flex gap-3.5 z-20 absolute left-[30px] top-[396px] 
+          lg:left-[2.08%] lg:top-[396px] lg:w-[314px] lg:h-[47px]
+           md:left-[2.3%] md:top-[290px] 
+          sm:w-[228px] sm:h-[34.13px] sm:left-[2.3%] sm:top-[283.44px]"
         >
           <Image
             src="Google.svg"
             alt="Google-Image"
             width={149}
             height={47}
-            className="w-[149px] h-[47px]  max-sm:w-[108.19px] max-sm:h-[34.13px]"
+            className="w-[149px] h-[47px] sm:w-[108.19px] sm:h-[34.13px]"
             priority
           />
           <Image
@@ -69,22 +75,24 @@ export default function Home() {
             alt="App-Image"
             width={151}
             height={45}
-            className="w-[151px] h-[45px] max-sm:w-[109.64px] max-sm:h-[32.68px]"
+            className="w-[151px] h-[45px] sm:w-[109.64px] sm:h-[32.68px]"
             priority
           />
         </div>
         <div
-          className="w-[570px] h-[432px] absolute  bg-white z-10
-        max-md:w-[356px] max-md:h-[318px]
-        max-sm:w-[323px]  max-sm:top-[20px] max-sm:right-[20px]"
+          className=" absolute bg-white z-10 left-[0px]
+          lg:w-[570px] lg:h-[432px]  lg:top-[51px]
+          md:w-[356px] md:h-[318px]  md:top-[33px]
+          sm:w-[323px] sm:h-[318px]  sm:top-[20px]"
         ></div>
 
         {/* Hero Section border */}
 
         <div
-          className="w-[570px] h-[535px] absolute right-[0px] border-[18px] text-[var(--stroke-color)]
-        max-md:w-[375px] max-md:h-[381px]
-        max-sm:w-[323px] max-sm:h-[358px] border-[10px]  "
+          className=" absolute right-0 border-[var(--stroke-color)]
+          lg:w-[570px] lg:h-[535px] lg:border-[18px]
+          md:w-[375px] md:h-[381px] md:border-[18px]
+          sm:w-[323px] sm:h-[358px] border-[10px]"
         ></div>
       </div>
 
@@ -94,9 +102,10 @@ export default function Home() {
         alt="Phone-Image"
         width={646}
         height={725}
-        className="absolute w-[646px] h-[725px] left-[836px] top-[216px] object-fill
-        max-md:w-[378px] max-md:h-[423px] max-md:left-[478px] max-md:top-[380px]
-        max-sm:w-[466px] max-sm:h-[521px] max-sm:left-[55px] max-sm:top-[586px]"
+        className="absolute   object-fill 
+         lg:w-[646px] lg:h-[725px] lg:left-[61.0%] lg:top-[216px] // Large screens
+    md:w-[378px] md:h-[423px] md:left-[63.3%] md:top-[380px] // Medium screens
+    sm:w-[466px] sm:h-[521px] sm:left-[14.7%] sm:top-[586px] // Small screens"
         priority
       />
     </section>

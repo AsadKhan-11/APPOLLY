@@ -7,42 +7,29 @@
   --grey-color: #232233;
   --silver-color: #6c6c72;
   --stroke-color: #7572ff;
+  --top-default: 100px;
+  --top-md: 50px;
+  --top-lg: 200px;
+
+  /* Couldnt find solution */
 }
 
-body {
+body,
+html {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
-/* globals.css */
-.h8 {
-  @apply text-[12.8px];
+  width: 100%;
 }
 
-.h7 {
-  @apply text-[16px];
-}
-
-.h6 {
-  @apply text-[20px];
-}
-
-.h5 {
-  @apply text-[25px];
+h2 {
+  font-size: 48.83px;
 }
 
 .h4 {
-  @apply text-[31.25px];
+  font-size: 31.25px;
 }
 
-.h3 {
-  @apply text-[39.06px];
-}
-
-.h2 {
-  @apply text-[48.83px];
-}
-
-.h1 {
-  @apply text-[61.04px];
+.h5 {
+  font-size: 25px;
 }

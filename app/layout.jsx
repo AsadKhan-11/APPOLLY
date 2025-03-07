@@ -9,8 +9,8 @@ const josefin = Josefin_Sans({
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className="">
-        <main className={josefin.className}>{children}</main>
+      <body className={`w-full h-full ${josefin.className}`}>
+        <main>{children}</main>
       </body>
     </html>
   );
